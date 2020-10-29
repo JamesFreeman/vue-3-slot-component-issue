@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="/dist/js/app.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <wrapper v-slot="vm">
+
+            <h1>Slot content:</h1>
+            <!-- Renders out global -->
+            <global></global>
+
+            <!-- Does not parse, and will render as <local></local> -->
+            <local></local>
+
+        </wrapper>
+    </div>
+</body>
+</html>
